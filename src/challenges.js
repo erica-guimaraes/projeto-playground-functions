@@ -1,5 +1,20 @@
 // Desafio 1 - Crie a função compareTrue
 
+const frio = false
+const calor = true
+
+function compareTrue (parametro1, parametro2){
+  if(parametro1 === false && parametro2 === true){
+    return false
+  } else if (parametro1 === false && parametro2 === false){
+    return false
+  } else if (parametro1 === true && parametro2 === true){
+    return true
+  }
+}
+
+console.log(compareTrue(frio, calor));
+
 // Desafio 2 - Crie a função splitSentence
 
 // Desafio 3 - Crie a função concatName
