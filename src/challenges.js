@@ -20,13 +20,23 @@ function splitSentence(frase) {
   return frase.split(' ');
 }
 
-console.log(splitSentence('Go Trybe'));
+// console.log(splitSentence('Go Trybe'));
 
 // Desafio 3 - Crie a função concatName
 
 // function concatName ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 
 // Desafio 4 - Crie a função footballPoints
+
+// const wins = pontos * 3;
+// const ties = pontos * 1;
+
+function footballPoints(wins, ties) {
+  let valorWins = wins * 3;
+  return valorWins + ties;
+}
+
+//  console.log(footballPoints(0, 0));
 
 // Desafio 5 - Crie a função highestCount
 
