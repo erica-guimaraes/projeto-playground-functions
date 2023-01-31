@@ -14,8 +14,6 @@ function compareTrue(parametro1, parametro2) {
 
 // Desafio 2 - Crie a função splitSentence
 
-// const frase = "Go Trybe";
-
 function splitSentence(frase) {
   return frase.split(' ');
 }
@@ -28,9 +26,6 @@ function splitSentence(frase) {
 
 // Desafio 4 - Crie a função footballPoints
 
-// const wins = pontos * 3;
-// const ties = pontos * 1;
-
 function footballPoints(wins, ties) {
   let valorWins = wins * 3;
   return valorWins + ties;
@@ -39,6 +34,21 @@ function footballPoints(wins, ties) {
 //  console.log(footballPoints(0, 0));
 
 // Desafio 5 - Crie a função highestCount
+
+function highestCount(numeros) {
+  let repeticao = {};
+  for (let index = 0; index < numeros.length; index += 1) {
+    let valor = numeros[index];
+    if (repeticao[valor] === undefined) {
+      repeticao[valor] = 1;
+    } else {
+      repeticao[valor] += 1;
+    }
+  }
+  return repeticao;
+}
+
+console.log(highestCount([1, 2, 3, 3]));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
