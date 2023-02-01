@@ -36,19 +36,21 @@ function footballPoints(wins, ties) {
 // Desafio 5 - Crie a função highestCount
 
 function highestCount(numeros) {
-  let repeticao = {};
+  let numMaior = 0;
   for (let index = 0; index < numeros.length; index += 1) {
-    let valor = numeros[index];
-    if (repeticao[valor] === undefined) {
-      repeticao[valor] = 1;
-    } else {
-      repeticao[valor] += 1;
+    if (numeros[index] > numMaior) {
+      numMaior = numeros[index];
     }
   }
-  return repeticao;
+  let qtdeNumMaior = 0;
+  for(let index in numMaior) {
+    if (numMaior === numeros[index]) {
+      qtdeNumMaior += 1;
+    }
+  }
+  return qtdeNumMaior;
 }
-
-console.log(highestCount([1, 2, 3, 3]));
+console.log(highestCount([-2, -2, -1]));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
