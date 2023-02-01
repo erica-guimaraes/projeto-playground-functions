@@ -21,8 +21,14 @@ function splitSentence(frase) {
 // console.log(splitSentence('Go Trybe'));
 
 // Desafio 3 - Crie a função concatName
+let primeiroNome = "";
+function concatName (){
+  for (let index in concatName);
+  primeiroNome = concatName[index].shift();
+  return primeiroNome;
+}
 
-// function concatName ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName("Lucas", "Cassiano", "Ferraz", "Paolillo"));
 
 // Desafio 4 - Crie a função footballPoints
 
@@ -35,22 +41,22 @@ function footballPoints(wins, ties) {
 
 // Desafio 5 - Crie a função highestCount
 
-function highestCount(numeros) {
-  let numMaior = 0;
-  for (let index = 0; index < numeros.length; index += 1) {
-    if (numeros[index] > numMaior) {
-      numMaior = numeros[index];
-    }
-  }
-  let qtdeNumMaior = 0;
-  for(let index in numMaior) {
-    if (numMaior === numeros[index]) {
-      qtdeNumMaior += 1;
-    }
-  }
-  return qtdeNumMaior;
-}
-console.log(highestCount([-2, -2, -1]));
+// function highestCount(numeros) {
+//   let numMaior = 0;
+//   for (let index = 0; index < numeros.length; index += 1) {
+//     if (numeros[index] > numMaior) {
+//       numMaior = numeros[index];
+//     }
+//   }
+//   let qtdeNumMaior = 0;
+  
+//     if (numMaior === numeros[index]) {
+//       qtdeNumMaior += 1;
+//     }
+//   }
+//   return qtdeNumMaior;
+// }
+// console.log(highestCount([3, 3, 2, 1]));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
