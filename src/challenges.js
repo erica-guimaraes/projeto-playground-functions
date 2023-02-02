@@ -99,7 +99,7 @@ function calcAllAreas(base, height, form) {
 
 // }
 
-// console.log(catAndMouse(1, 0, 2));
+console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8 - Crie a função fizzBuzzca
 
@@ -159,7 +159,7 @@ function decode(string) {
   }
   return letras.join('');
 }
-console.log(decode('This is an encoding test'));
+// console.log(decode('This is an encoding test'));
 
 // Desafio 10 - Crie a função techList
 
