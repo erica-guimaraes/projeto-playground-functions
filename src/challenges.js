@@ -89,10 +89,17 @@ function calcAllAreas(base, height, form) {
 // Desafio 7 - Crie a função catAndMouse
 
 // function catAndMouse(mouse, cat1, cat2) {
+//   if (mouse !== cat1 === cat2){
+
+//   } else if (mouse < cat1 && mouse > cat2) {
+
+//   } else {
+
+//   }                                                                                         
 
 // }
 
-// console.log(catAndMouse(6, 6));
+// console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8 - Crie a função fizzBuzzca
 
@@ -110,11 +117,62 @@ function fizzBuzz(numeros) {
   }
   return numeros
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+// console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9 - Crie a função encode e a função decode"
 
+function encode(string) {
+  let letras = string.split('')
+  for (let index in letras) {
+    if (letras[index] === 'a') {
+       letras[index] = 1;
+     } else if (letras[index] === 'e') {
+       letras[index] = 2;
+     } else if (letras[index] === 'i') {
+       letras[index] = 3;
+     } else if (letras[index] === 'o') {
+       letras[index] = 4;
+     } else if (letras[index] === 'u') {
+       letras[index] = 5;
+     } else {
+       letras[index] = letras[index];
+     }
+  }
+  return letras.join('');
+} 
+function decode(string) {
+  let letras = string.split('')
+  for (let index in letras) {
+    if (letras[index] === '1') {
+       letras[index] = 'a';
+     } else if (letras[index] === '2') {
+       letras[index] = 'e';
+     } else if (letras[index] === '3') {
+       letras[index] = 'i';
+     } else if (letras[index] === '4') {
+       letras[index] = 'o';
+     } else if (letras[index] === '5') {
+       letras[index] = 'u';
+     } else {
+       letras[index] = letras[index];
+     }
+  }
+  return letras.join('');
+}
+console.log(decode('This is an encoding test'));
+
 // Desafio 10 - Crie a função techList
+
+// function techList(tech, name) {
+
+  
+//   return result;
+// }
+
+// console.log(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas');
+// tech: "CSS",
+// name: "Lucas"
+
 
 // Não modifique essas linhas
 module.exports = {
