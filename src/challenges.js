@@ -22,10 +22,10 @@ function splitSentence(frase) {
 
 // Desafio 3 - Crie a função concatName
 
-function concatName(nomes){
+function concatName(nomes) {
   let primeiroNome = nomes[0];
-  let ultimoNome = nomes[nomes.length - 1]; 
-  
+  let ultimoNome = nomes[nomes.length - 1];
+
   return ultimoNome + ", " + primeiroNome;
 }
 
@@ -57,7 +57,7 @@ function highestCount(numeros) {
   }
   return qtdeMaiorNum;
 }
-  
+
 // console.log(highestCount([3, 3, 2, 1]));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
@@ -84,13 +84,35 @@ function calcAllAreas(base, height, form) {
   }
 }
 
-console.log(calcAllAreas(10, 50, "triângulo"));
+// console.log(calcAllAreas(10, 50, "triângulo"));
 
 // Desafio 7 - Crie a função catAndMouse
 
+// function catAndMouse(mouse, cat1, cat2) {
+
+// }
+
+// console.log(catAndMouse(6, 6));
+
 // Desafio 8 - Crie a função fizzBuzzca
 
-// Desafio 9 - Crie a função encode e a função decode
+function fizzBuzz(numeros) {
+  for (let index in numeros) {
+    if (numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
+      numeros[index] = 'fizzBuzz';
+    } else if (numeros[index] % 3 === 0) {
+      numeros[index] = 'fizz';
+    } else if (numeros[index] % 5 === 0) {
+      numeros[index] = 'buzz';
+    } else {
+      numeros[index] = 'bug!';
+    }
+  }
+  return numeros
+}
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+
+// Desafio 9 - Crie a função encode e a função decode"
 
 // Desafio 10 - Crie a função techList
 
