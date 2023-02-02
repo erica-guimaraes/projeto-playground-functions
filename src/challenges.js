@@ -21,14 +21,15 @@ function splitSentence(frase) {
 // console.log(splitSentence('Go Trybe'));
 
 // Desafio 3 - Crie a função concatName
-let primeiroNome = "";
-function concatName (){
-  for (let index in concatName);
-  primeiroNome = concatName[index].shift();
-  return primeiroNome;
+
+function concatName(nomes){
+  let primeiroNome = nomes[0];
+  let ultimoNome = nomes[nomes.length - 1]; 
+  
+  return ultimoNome + ", " + primeiroNome;
 }
 
-console.log(concatName("Lucas", "Cassiano", "Ferraz", "Paolillo"));
+console.log(concatName(["Lucas", "Cassiano", "Ferraz", "Paolillo"]));
 
 // Desafio 4 - Crie a função footballPoints
 
